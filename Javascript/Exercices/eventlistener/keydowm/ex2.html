@@ -1,0 +1,17 @@
+
+
+<input type="text" name = "input" value= "Digite aqui">
+<script>
+   // https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/input
+    //Crie um campo de texto (input).
+//O Exercício: * Quando o usuário estiver digitando e apertar Enter, mostre um alert com o texto: "Mensagem Enviada!".
+//Se ele apertar Escape (Esc), limpe tudo o que foi digitado no campo.
+//O que você pratica: Captura de teclas de controle que não geram caracteres visíveis.
+const input = document.querySelector("input");
+
+document.addEventListener("keydown",(event)=>{
+    if(event.key === "Enter") alert("Mensagem Enviada!");
+    if(event.key === "Escape ") input.value = "";
+})
+// a corrigir
+</script>
