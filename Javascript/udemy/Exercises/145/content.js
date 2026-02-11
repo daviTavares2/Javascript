@@ -11,15 +11,22 @@
 
 //Isso significa que podes passá-las de um lado para o outro como se fossem números ou textos.
 
-// A função que será chamada mais tarde (Callback)
-function respondToKey(event) {
-    console.log("Tecla pressionada: " + event.key);
+function anotherAddEventListener(typeOfEvent, callback) {
+    // 1. Simulação de um evento que o navegador detectou
+    let eventThatHappened = {
+        eventType: "keypress",
+        key: "p",
+        durationOfKeypress: 2
+    }
+
+    // 2. Verificação: O evento que ocorreu é o que estamos à espera?
+    if(eventThatHappened.eventType === typeOfEvent) {
+        
+        // 3. A MAGIA: Chamamos a função 'callback' e 
+        // passamos o objeto do evento para dentro dela!
+        callback(eventThatHappened);
+    }
 }
 
-// O addEventListener é a Higher-Order Function
-// Ele recebe o nome da função 'respondToKey' como argumento
-document.addEventListener("keypress", respondToKey);
 
-    //DurationOfKeyPress
-    //eventType
-    //TypeOfEvent
+
