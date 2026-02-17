@@ -2,7 +2,7 @@
  //o preco e a quantidade. O sistema deve calcular o total e aplicar um desconto se a compra for grande."
 
  function processoCompra(produto , preco , quantidade , acao){
-    let valorBruto = preco*quantidade;
+    let valorBruto = preco * quantidade;
     let desconto = 0;
       
     if (valorBruto > 1000 ) {
