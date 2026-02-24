@@ -1,0 +1,11 @@
+Quando o utilizador clicar no input, o pai dele (.campo-grupo) deve ficar com o fundo amarelo (background-color: yellow).
+
+E o "irmão" que é o <p class="erro"> deve desaparecer (hide() ou css("display", "none")).
+
+Consegues montar essa lógica?
+
+Usa $(this).parent().css(...) para o fundo.
+
+Usa $(this).siblings(".erro").hide() para o erro.
+
+Tenta juntar os dois dentro de um evento de click ou focus no input!

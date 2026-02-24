@@ -1,0 +1,7 @@
+O Objetivo: "O Trocador de Imagens"
+
+Tens uma imagem: <img src="cachorro.jpg" alt="Foto">.
+
+Tens um botão: <button>Mudar para Gato</button>.
+
+Ao clicar no botão, usa o comando .attr() para mudar o src da imagem para "gato.jpg".

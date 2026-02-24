@@ -1,0 +1,31 @@
+🏆 The "Login Feedback" Challenge
+Scenario: You are building a login page. You have an <input type="text"> and a <h1> that acts as a status message.
+
+The Goal:
+
+When the user presses a key inside the input field, check the length (how many characters) of the text they typed.
+
+If the text has more than 8 characters:
+
+Change the <h1> text to say: "Strong Password".
+
+Change the <h1> color to green.
+
+Add a class to the <h1> called "success".
+
+If the text has 8 characters or less:
+
+Change the <h1> text to say: "Too Short".
+
+Change the <h1> color to red.
+
+Check if the <h1> has the class "success". If it does, remove it.
+
+🛠️ Tools you will need (New stuff to research):
+.val(): This is how jQuery gets the text inside an input.
+
+.length: You used this with arrays; it works on strings too!
+
+.keypress() or .on("input", ...): To detect when the user types.
+
+.text("New Message"): To change the text inside an element.

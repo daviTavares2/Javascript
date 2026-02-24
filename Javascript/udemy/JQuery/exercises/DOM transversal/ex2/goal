@@ -1,0 +1,18 @@
+O Teu Objetivo:
+
+Ao clicar no botão .btn-check:
+
+Tu queres selecionar o irmão dele (o <span>) e mudar a cor do texto para cinzento e colocar um risco no meio (CSS text-decoration: line-through).
+
+Dica: Usa .siblings("span").
+
+Ao clicar no botão .btn-delete:
+
+Tu queres que toda a linha (.linha) desapareça.
+
+Dica: Usa o .parent() para chegar à div e depois o comando .remove().
+
+🛠️ O que precisas de praticar aqui:
+Diferenciar qual botão foi clicado (usando a classe correta).
+
+Saber quando "subir" para o pai (.parent()) e quando procurar "ao lado" (.siblings()).

@@ -1,0 +1,32 @@
+
+🏆 Desafio: O Menu de Navegação Interativo
+Imagina que estás a criar um site e tens três itens de menu (links ou botões). O teu objetivo é criar um efeito de "foco" para que o utilizador saiba exatamente onde está a apontar.
+
+O Cenário:
+
+Tens vários elementos <li> (itens de lista).
+
+Tens um <h1> que serve de "painel de informações".
+
+O Teu Objetivo:
+
+Ao entrar com o rato (mouseenter) num item da lista:
+
+Muda a cor de fundo desse item para "black".
+
+Muda a cor do texto desse item para "white".
+
+Faz o <h1> lá de cima mostrar o texto: "Estás a ver o item: [Texto do Item]".
+
+Ao sair com o rato (mouseleave):
+
+Remove as cores (volta ao normal).
+
+Faz o <h1> voltar a dizer apenas: "Escolhe uma opção".
+
+🛠️ Ferramentas que vais precisar:
+$(this): Para mudar apenas o item onde o rato está em cima, e não todos ao mesmo tempo.
+
+.text(): Para ler o texto do item atual e para mudar o texto do h1.
+
+.css(): Para as cores.

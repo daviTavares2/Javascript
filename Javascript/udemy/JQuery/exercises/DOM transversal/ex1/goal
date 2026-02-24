@@ -1,0 +1,25 @@
+Próximo Nível: Atravessar a Árvore (DOM Traversal)
+Agora que já sabes mexer num elemento de cada vez, o próximo passo é aprender a mexer em elementos baseando-te na relação 
+entre eles.
+
+Imagina que tens 10 botões dentro de 10 divs diferentes. Se clicares num botão, como é que o jQuery sabe qual é a 
+div que é "pai" desse botão para mudar a cor dela?
+
+Novas ferramentas para estudares:
+
+.parent(): Sobe um nível para o elemento pai.
+
+.children(): Desce para os elementos filhos.
+
+.find(): Procura algo específico lá dentro.
+
+.siblings(): Seleciona os "irmãos" (elementos ao lado).
+
+//O Teu Objetivo://
+
+Ao clicar num botão, tu queres que apenas o div (card) onde o botão está dentro ganhe uma borda vermelha.
+
+Dica: Usa o $(this).parent().css(...).
+
+Consegues usar o .parent() para fazer o botão "avisar" ao pai dele que foi clicado? Se conseguires isto, estás pronto 
+para criar interfaces complexas!
