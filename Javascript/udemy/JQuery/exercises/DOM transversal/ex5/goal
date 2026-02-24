@@ -1,0 +1,13 @@
+Ao clicar em .comprar:
+
+Sobe para o pai .produto.
+
+Procura o .nome lá dentro e muda a cor para verde.
+
+Dica: $(this).parent().parent().find(".nome") ou um comando novo: $(this).closest(".produto").find(".nome").
+
+Ao clicar em .destaque:
+
+Sobe para o pai .produto.
+
+Muda o fundo (background-color) do .produto para amarelo.
