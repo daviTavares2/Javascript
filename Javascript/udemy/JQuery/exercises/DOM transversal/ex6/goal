@@ -1,13 +1,17 @@
-Ao clicar em .comprar:
+Nível Final: O "Toggle" de Seleção
+Agora que já sabes navegar, vamos aprender a fazer algo que mude de estado (Ligar/Desligar).
 
-Sobe para o pai .produto.
+O Objetivo:
+Cria um sistema onde, ao clicar no botão .destaque:
 
-Procura o .nome lá dentro e muda a cor para verde.
+Se o produto não tiver a cor amarela, ele fica amarelo.
 
-Dica: $(this).parent().parent().find(".nome") ou um comando novo: $(this).closest(".produto").find(".nome").
+Se ele já for amarelo, ele volta ao normal.
 
-Ao clicar em .destaque:
+Ferramenta Mágica: .toggleClass("nome-da-classe").
 
-Sobe para o pai .produto.
+O Teu Novo Desafio:
 
-Muda o fundo (background-color) do .produto para amarelo.
+Cria no teu CSS uma classe chamada .destacado { background-color: yellow; border: 2px solid orange; }.
+
+No jQuery, faz com que ao clicar no botão destaque, o .closest(".produto") use o .toggleClass("destacado").                                                                                                                                                                     

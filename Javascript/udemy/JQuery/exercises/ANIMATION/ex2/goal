@@ -1,0 +1,8 @@
+O objetivo agora é: Quando eu clicar numa pergunta, a resposta dela abre, mas se houver outra resposta 
+aberta em qualquer lugar da página, ela deve fechar sozinha.
+
+Vais precisar de duas ações dentro do mesmo clique:
+
+Fechar as outras: Selecionar todas as .resposta da página e usar o .slideUp().
+
+Abrir a atual: Usar o .slideToggle() (ou .slideDown()) no .next() de quem foi clicado.

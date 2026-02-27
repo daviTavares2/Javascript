@@ -1,0 +1,8 @@
+🛠️ O Teu Objetivo:
+Ao clicar no <h3> (a pergunta):
+
+Deves encontrar a .resposta que está logo abaixo dele.
+
+Usar o .slideToggle() para abrir ou fechar essa resposta suavemente.
+
+Dica de Traversal: Como a .resposta é o próximo elemento logo a seguir ao <h3>, podes usar o comando .next().

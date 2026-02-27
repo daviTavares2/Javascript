@@ -4,9 +4,11 @@ $(document).ready(function(){
       $(this).closest(".produto").find(".preco").css("color","green")
     })
     $(".destaque").on("click",function(){
-        $(this).closest(".produto").find(".preco").toggleClass("destacado");
+        $(this).closest(".produto").find(".preco").css("background-color","yellow");
     })
 })
+
+
 
 
 

@@ -1,15 +1,12 @@
 
 $(document).ready(function(){
     $(".comprar").on("click",function(){
-       $("nome").css("color","green") 
+      $(this).closest(".produto").find(".preco").css("color","green")
+    })
+    $(".destaque").on("click",function(){
+        $(this).closest(".produto").find(".preco").css("background-color","yellow");
     })
 })
-
-
-
-
-
-
 
 //Nova Ferramenta: .closest()
 //Em vez de fazeres .parent().parent().parent() (que é confuso), podes usar o .closest(".classe"). 
