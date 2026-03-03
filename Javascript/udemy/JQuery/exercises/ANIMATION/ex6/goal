@@ -1,0 +1,11 @@
+Crie um evento de clique no botão #btn-executar.
+
+Ao clicar, a #caixa deve:
+
+Aumentar a largura para 300px.
+
+Mover-se para a esquerda em 150px (usando left).
+
+Reduzir a opacidade para 0.5.
+
+A animação deve durar 2 segundos (2000 milissegundos).

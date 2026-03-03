@@ -1,0 +1,21 @@
+A Revelação: Ao clicar em "Ver Detalhes", a div#info-extra deve aparecer de forma suave, e o #card deve aumentar a sua 
+altura para acomodar o texto (tudo usando animações de deslize ou opacidade).
+
+A Sequência de Destaque: Ao clicar em "Destaque", o #card deve realizar uma sequência ininterrupta (encadeada):
+
+Ficar quase invisível.
+
+Voltar à opacidade total.
+
+Diminuir de tamanho drasticamente e depois crescer além do tamanho original.
+
+O Modo Discreto: Ao clicar em "Modo Discreto", o #card deve sumir completamente de forma gradual e, 
+logo em seguida, o botão que foi clicado também deve desaparecer.
+
+Regras da Prova:
+
+Tens de usar Chaining (encadeamento) em pelo menos um dos botões.
+
+Pelo menos uma ação deve usar o método .animate() com um objeto de propriedades CSS.
+
+Não podes usar o CSS para as animações, apenas jQuery
