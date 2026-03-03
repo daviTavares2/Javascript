@@ -1,11 +1,23 @@
-Crie um evento de clique no botão #btn-executar.
+Teus Objetivos :
+O Deslize Lateral:
 
-Ao clicar, a #caixa deve:
+Quando eu clicar em "Abrir Menu", o #menu-lateral deve expandir a sua largura de 0px para 250px.
 
-Aumentar a largura para 300px.
+O texto do botão deve mudar para "Fechar Menu" (podes usar o .text() que aprendemos antes).
 
-Mover-se para a esquerda em 150px (usando left).
+Se eu clicar novamente, ele deve voltar para 0px e o texto do botão volta ao original.
 
-Reduzir a opacidade para 0.5.
+O Efeito de Atenção (Chaining Complexo):
 
-A animação deve durar 2 segundos (2000 milissegundos).
+Quando eu clicar em "Modo de Emergência", o #menu-lateral deve fazer uma sequência rápida:
+
+Aparecer (caso esteja fechado).
+
+Mudar a opacidade para 50% e voltar para 100% (duas vezes seguidas para parecer um pisca-pisca).
+
+No final, ele deve encolher a altura (height) pela metade e depois voltar ao normal.
+
+A Saída Suave:
+
+Se eu clicar em qualquer <li> (item da lista) dentro do menu, esse item específico deve desaparecer deslizando para cima, e 
+depois o menu inteiro deve fechar-se sozinho.

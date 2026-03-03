@@ -1,29 +1,50 @@
 const semaforo = $("#semaforo");
 
-semaforo.after("<button id ='final'>Pare</button>");
-semaforo.after("<button>Atenção</button>");
-semaforo.after("<button >Siga</button>");
-$("#final").after("<h1 id = 'historico'>Historico</h1>");
+semaforo.prepend("<h1>Semaforo</h1>") 
 
+semaforo.append("<button>Pare</button>");
+semaforo.append("<button>Atenção</button>");
+semaforo.append("<button>Siga</button>");
 
 $("button").click(function(){
    
    const valorBotao = $(this).text();
-   const horaAtual = new Date().toLocaleTimeString();
-
+   
     if(valorBotao === "Pare"){
-         $("#semaforo").css("background-color","red");
-             $("#historico").after("<p>O Semaforo mudou para "+'Vermelho '+"as "+horaAtual+"  </p>")
+        semaforo.css("color","red");
     }
     else if(valorBotao === "Atenção"){
-          $("#semaforo").css("background-color","yellow");
-             $("#historico").after("<p>O Semaforo mudou para "+'Amarelo '+"as "+horaAtual+"  </p>")
+        semaforo.css("color","red");
     } 
     else{
-          $("#semaforo").css("background-color","green");
-             $("#historico").after("<p>O Semaforo mudou para "+'Verde '+"as "+horaAtual+"  </p>")
+        semaforo.css("color","red");
     }
     
-
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//before(): element before 
+
+//after(); element after
+
+//prepend(): <h1><element> content <h1>
+
+//append(): <h1> content <element><h1>
+
+//remove() : remove element
+
+//new Date()toLocateTimeString : add Time

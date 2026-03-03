@@ -1,0 +1,14 @@
+Tenta resolver estes desafios usando os métodos (before, after, prepend, append e remove):
+
+O Cabeçalho: Adiciona um botão com o texto "Sair" antes do título <h1>.
+
+O Rodapé: Adiciona um parágrafo que diga "Fim da lista" logo após a lista <ul>.
+
+Item Prioritário: Adiciona um novo item <li>Ovos</li> no início da lista (dentro do <ul>).
+
+Item Extra: Adiciona um novo item <li>Café</li> no final da lista (dentro do <ul>).
+
+Limpeza: Remove permanentemente o parágrafo que tem a classe .aviso.
+
+Desafio Pro: Adiciona um subtítulo <h2>Setor: Padaria</h2> que apareça dentro da div#container, mas antes de qualquer outro
+ conteúdo que já esteja lá dentro.

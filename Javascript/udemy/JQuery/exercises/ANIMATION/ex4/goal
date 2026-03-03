@@ -1,11 +1,21 @@
-Crie um evento de clique no botão #btn-executar.
+Objetivo Final: Criar um sistema de notificações onde o utilizador controla totalmente a visibilidade e o destaque das mensagens através de animações.
 
-Ao clicar, a #caixa deve:
+Requisitos do Cliente:
 
-Aumentar a largura para 300px.
+A Interface:
 
-Mover-se para a esquerda em 150px (usando left).
+Cria um título (H2) chamado "Mensagens do Sistema".
 
-Reduzir a opacidade para 0.5.
+Cria um botão chamado "Alternar Painel".
 
-A animação deve durar 2 segundos (2000 milissegundos).
+Cria uma "Caixa de Alerta" (uma div com algum texto dentro).
+
+Cria um botão chamado "Focar Atenção".
+
+O Comportamento Esperado:
+
+Ação A: Quando eu clicar no botão "Alternar Painel", a Caixa de Alerta deve aparecer ou desaparecer. Mas atenção: não quero que ela simplesmente suma; quero um efeito de deslize ou de transparência (tu escolhes qual fica mais elegante).
+
+Ação B (O Combo): Quando eu clicar no botão "Focar Atenção", quero que a Caixa de Alerta faça uma sequência de movimentos para chamar a minha atenção: ela deve encolher, esticar e terminar ficando meio transparente, tudo de uma vez só.
+
+Ação C: Se eu clicar no Título (H2), ele deve desaparecer gradualmente até ficar invisível.

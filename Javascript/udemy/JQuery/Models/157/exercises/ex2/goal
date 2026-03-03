@@ -1,0 +1,15 @@
+Interface: Via jQuery, cria 3 botões dentro da div#controles. Os botões devem ter os nomes: "Pare", "Atenção" e "Siga".
+
+Lógica de Cores:
+
+Ao clicar em "Pare", a div#semaforo deve ficar vermelha.
+
+Ao clicar em "Atenção", a div#semaforo deve ficar amarela.
+
+Ao clicar em "Siga", a div#semaforo deve ficar verde.
+
+Lógica de Histórico: Abaixo dos botões, cria uma lista vazia (<ul>). Sempre que uma cor for alterada, adiciona um novo item (<li>) 
+    a essa lista dizendo: "O estado mudou para [COR] às [HORA]".
+
+Reset de Segurança: Se a lista de histórico chegar a mais de 5 itens, o próximo clique deve apagar o item mais a
+ntigo da lista antes de adicionar o novo.
