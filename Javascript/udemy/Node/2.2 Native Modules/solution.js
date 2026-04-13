@@ -3,7 +3,7 @@ const fs = require("fs");
 //fs.writeFile("message.txt", "Hello Node", (err) => {
  // if (err) throw err;
  // console.log("The file has been saved!");
-//});
+//no});
 
 fs.readFile("./message.txt", (err, data) => {
   if (err) throw err;
