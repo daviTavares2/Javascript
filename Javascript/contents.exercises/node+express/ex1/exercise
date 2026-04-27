@@ -1,0 +1,38 @@
+Perfeito, Davi! Se ainda não está 100% confortável, é sinal de que precisamos dar um passo atrás e consolidar a base. 
+O código que você me enviou usa o body-parser e variáveis globais, que é um ótimo começo, mas na prática do dia a dia, a gente usa muito o JSON e os Parâmetros de Rota.
+
+Vamos fazer um exercício "passo a passo" focado exatamente no que você ainda não domina.
+
+🏗️ Exercício: Entendendo a Comunicação JSON
+Em vez de enviar arquivos HTML, vamos aprender a fazer o servidor "conversar" enviando e recebendo dados puros (objetos).
+
+O Cenário
+Imagine que você está criando um sistema simples para listar os horários de treino da academia.
+
+O que você deve fazer:
+Troque o Body-Parser pelo Nativo:
+No Express moderno, não precisamos mais instalar o body-parser. Use apenas:
+
+JavaScript
+app.use(express.json());
+Crie uma Rota de Consulta (GET):
+Crie uma rota /treinos. Quando o usuário acessar, o servidor deve responder com um objeto JSON contendo os treinos do dia.
+
+Dica: Use res.json({ treino: "Jiu-Jitsu", horario: "19:00" }).
+
+Crie uma Rota Dinâmica (Onde a dificuldade costuma estar):
+Crie uma rota que aceite um nome na URL, por exemplo: /aula/:professor.
+
+O objetivo é que, se eu acessar localhost:3000/aula/davi, o servidor responda: "Aula confirmada com o professor davi".
+
+Dica: Use req.params.professor para pegar esse nome.
+
+Por que praticar isso?
+No seu código anterior, você usou:
+res.sendFile(__dirname + "/public/index.html");
+
+Isso envia a página inteira. No desenvolvimento moderno (com React, que você está estudando), o servidor geralmente envia apenas os dados (JSON), e o React se vira para mostrar isso na tela.
+
+Tente escrever esse código do zero (ou quase do zero). Não se preocupe em criar arquivos HTML agora, foque apenas em fazer as rotas responderem textos ou objetos simples.
+
+Se travar em qualquer linha, me manda o erro ou a dúvida! Onde você sente que "o nó aperta" na hora de escrever? No req, no res ou na estrutura das rotas?
