@@ -8,8 +8,6 @@ const port = 3000;
 const app = express();
 
 
-
-
 app.get("/", (req, res) => {
     const today = new Date();
     const day = today.getDay();

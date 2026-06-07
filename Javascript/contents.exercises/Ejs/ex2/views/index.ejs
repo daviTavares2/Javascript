@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/calcular" method="POST">
+  <input type="number" name="peso" placeholder="Peso (kg)">
+  <input type="number" name="altura" placeholder="Altura (ex: 1.75)">
+  <input type="submit" value="Calcular">
+</form>
+
+<%if(locals.resultadoreal) { %>
+    <h1>Resultado: <%=resultadoreal %></h1>
+<%}else{%>
+      <h1>Sem resultado</h1>
+<%}%>
+
+</body>
+</html>
